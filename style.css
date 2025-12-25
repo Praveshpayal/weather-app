@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌈 Modern animated background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* 💎 Glassmorphism Card */
+.weather-container {
+    width: 320px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Title */
+.weather-container h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 25px;
+}
+
+/* City name */
+#location {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Temperature */
+#temperature {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Description */
+#description {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 12px;
+}
+
+/* Extra details */
+#humidity, #wind {
+    font-size: 14px;
+    margin: 4px 0;
+    opacity: 0.85;
+}
